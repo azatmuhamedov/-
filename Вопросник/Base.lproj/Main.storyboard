@@ -184,18 +184,71 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="akO-8r-CUq">
+                                <rect key="frame" x="20" y="300.5" width="335" height="66.5"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="73f-YG-bpl">
+                                        <rect key="frame" x="-2" y="0.0" width="339" height="31"/>
+                                    </slider>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CUa-md-rX0">
+                                        <rect key="frame" x="0.0" y="46" width="335" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pmv-uG-RfI">
+                                                <rect key="frame" x="0.0" y="0.0" width="293.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BO9-Vi-kH6">
+                                                <rect key="frame" x="293.5" y="0.0" width="41.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qm7-3r-5FT">
+                                <rect key="frame" x="61" y="366" width="252" height="34.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Ответить"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEk-ow-h3a">
+                                <rect key="frame" x="20" y="52" width="335" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9ZE-mz-Gxe">
+                                <rect key="frame" x="0.0" y="44" width="375" height="4"/>
+                            </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wmR-gV-8M2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="DEk-ow-h3a" firstAttribute="top" secondItem="wmR-gV-8M2" secondAttribute="top" constant="8" id="9fn-TX-jfa"/>
+                            <constraint firstItem="9ZE-mz-Gxe" firstAttribute="top" secondItem="wmR-gV-8M2" secondAttribute="top" id="AHv-OW-aeb"/>
+                            <constraint firstItem="wmR-gV-8M2" firstAttribute="trailing" secondItem="9ZE-mz-Gxe" secondAttribute="trailing" id="BLx-tN-kVT"/>
+                            <constraint firstItem="akO-8r-CUq" firstAttribute="leading" secondItem="wmR-gV-8M2" secondAttribute="leading" constant="20" id="GWe-0d-92Z"/>
+                            <constraint firstItem="DEk-ow-h3a" firstAttribute="leading" secondItem="wmR-gV-8M2" secondAttribute="leading" constant="20" id="HaC-7R-G1P"/>
                             <constraint firstItem="LCi-OH-brk" firstAttribute="leading" secondItem="wmR-gV-8M2" secondAttribute="leading" constant="20" id="Kkx-CU-CeH"/>
+                            <constraint firstItem="9ZE-mz-Gxe" firstAttribute="leading" secondItem="wmR-gV-8M2" secondAttribute="leading" id="Kog-qB-zy1"/>
                             <constraint firstItem="vnT-yp-XdR" firstAttribute="centerY" secondItem="Pak-db-NSe" secondAttribute="centerY" id="VNG-1l-JMq">
                                 <variation key="heightClass=compact-widthClass=compact" constant="16"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="16"/>
                             </constraint>
+                            <constraint firstItem="wmR-gV-8M2" firstAttribute="trailing" secondItem="DEk-ow-h3a" secondAttribute="trailing" constant="20" id="Xaq-u6-QdZ"/>
                             <constraint firstItem="vnT-yp-XdR" firstAttribute="leading" secondItem="wmR-gV-8M2" secondAttribute="leading" constant="20" id="aqv-8V-eSx"/>
                             <constraint firstItem="wmR-gV-8M2" firstAttribute="trailing" secondItem="LCi-OH-brk" secondAttribute="trailing" constant="20" id="cg5-xb-TOo"/>
+                            <constraint firstItem="wmR-gV-8M2" firstAttribute="trailing" secondItem="akO-8r-CUq" secondAttribute="trailing" constant="20" id="fz7-wS-sSj"/>
                             <constraint firstItem="wmR-gV-8M2" firstAttribute="trailing" secondItem="vnT-yp-XdR" secondAttribute="trailing" constant="20" id="jWw-Lh-nYd"/>
+                            <constraint firstItem="akO-8r-CUq" firstAttribute="centerY" secondItem="Pak-db-NSe" secondAttribute="centerY" id="kMK-BF-SLn">
+                                <variation key="heightClass=compact-widthClass=compact" constant="16"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="16"/>
+                            </constraint>
                             <constraint firstItem="LCi-OH-brk" firstAttribute="centerY" secondItem="Pak-db-NSe" secondAttribute="centerY" id="mdI-rZ-z7J">
                                 <variation key="heightClass=compact-widthClass=compact" constant="16"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="16"/>
